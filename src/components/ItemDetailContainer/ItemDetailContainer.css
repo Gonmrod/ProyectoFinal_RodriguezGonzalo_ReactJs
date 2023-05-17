@@ -1,0 +1,15 @@
+.ItemDetailContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(173, 144, 104, 0.733);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .ItemDetailContainer {
+      height: auto;
+      padding: 20px;
+    }
+  }
+  
