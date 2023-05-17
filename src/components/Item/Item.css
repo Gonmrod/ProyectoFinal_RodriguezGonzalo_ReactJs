@@ -41,7 +41,7 @@
   }
   
   .Option {
-    background-color: #45A29E;
+    background-color: #a29f45;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -49,10 +49,11 @@
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
   }
   
   .Option:hover {
-    background-color: #66FCF1;
+    background-color: #a29f45;
     color: black;
   }
   

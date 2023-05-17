@@ -4,13 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget/CartWidget';
 import { NavLink, Link } from 'react-router-dom';
-
+import './NavBarstyle.css'
 const NavBar = () => {
+
   return (
     <Link to="/">
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand className='buttonNav'>RetroZone</Navbar.Brand>
+        <Navbar.Brand className='buttonNav' style={{ textDecoration: 'none' }}>RetroZone</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
