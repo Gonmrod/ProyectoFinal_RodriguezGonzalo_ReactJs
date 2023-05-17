@@ -1,0 +1,63 @@
+.CartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #977e7e;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .CartItem__info {
+    flex-grow: 1;
+  }
+  
+  .CartItem__name {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .CartItem__price {
+    font-size: 1rem;
+    margin: 0;
+    color: #1e1c1c;
+  }
+  
+  .CartItem__quantity {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .CartItem__subtotal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .CartItem__subtotalLabel {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #1a1818;
+  }
+  
+  .CartItem__subtotalValue {
+    font-size: 1.2rem;
+    gap: 10px;
+    margin: 0;
+  }
+  
+  .CartItem__removeButton {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .CartItem__removeButton:hover {
+    background-color: #c82333;
+  }
+  
