@@ -1,0 +1,18 @@
+.boton {
+    background-color: #a25c45;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.boton:hover {
+    background-color: #c2bf52;
+    color: black;
+}
+
+

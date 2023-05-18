@@ -13,7 +13,7 @@
   }
   
   .CartItem__name {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 0;
   }
   
@@ -61,3 +61,16 @@
     background-color: #c82333;
   }
   
+  
+.cart-img {
+  height: 80px;
+  width: 100px;
+  border: rgba(255, 255, 255, 0.15) 5px solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.cart-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

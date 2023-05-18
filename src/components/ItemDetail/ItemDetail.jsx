@@ -17,9 +17,9 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
         addItem(item, quantity);
     }
     return (
-        <article className='CardItem'>
-            <header className='Header'>
-                <h2 className='ItemHeader'>
+        <article className='CardItem1'>
+            <header className='Header1'>
+                <h2 className='ItemHeader1'>
                     {name}
                 </h2>
             </header>
