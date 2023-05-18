@@ -41,7 +41,7 @@
   }
   
   .Option {
-    background-color: #45A29E;
+    background-color: #a28145;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -52,7 +52,7 @@
   }
   
   .Option:hover {
-    background-color: #66FCF1;
+    background-color: #fcf766;
     color: black;
   }
   

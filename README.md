@@ -1,1 +1,3 @@
+#**RetroZone - ecommerce**
+
 Este proyecto es una tienda online llamada RetroZone, donde se pueden comprar productos de distintas categorías como Vinos, Tabaco y Regionales. Está desarrollado en React.js y Bootstrap, utilizando componentes funcionales y hooks. Además, se implementó el enrutamiento y la navegación entre las distintas secciones de la página utilizando React Router. La información de los productos se obtiene de manera asíncrona a través de una API falsa y se muestra dinámicamente en la página. La tienda también cuenta con un carrito de compras que permite agregar y quitar productos, y un formulario para completar la compra.
