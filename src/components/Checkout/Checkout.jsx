@@ -9,8 +9,8 @@ import { db } from "../../services/firebase/firebaseConfig";
 const Checkout = () => {
     const [loading, setLoading] = useState(false);
     const [orderId, setOrderId] = useState('');
-    const { cart, clearCart, totalPrice } = useContext(CartContext);
-
+    const { cart, clearCart, total } = useContext(CartContext);
+    
     
     const createOrder = async ({ name, phone, email }) => {
         setLoading(true);
@@ -21,24 +21,26 @@ const Checkout = () => {
                     name, phone, email
                 },
                 items: cart,
-                total: totalPrice(),
+                total: total,
                 date: Timestamp.fromDate(new Date())
             }
 
             const batch = writeBatch(db);
             const outOfStock = [];
+
             const ids = cart.map(prod => prod.id);
-            const productsAddedFromFirestone = await getDocs(query(collection(db, 'Items'), where(documentId(), 'in', ids)))
+            const productsRef = collection(db, 'Items')
+            const productsAddedFromFirestone = await getDocs(query(productsRef, where(documentId(), 'in', ids)))
             const { docs } = productsAddedFromFirestone;
 
-            docs.forEach((doc) => {
+            docs.forEach(doc => {
                 const dataDoc = doc.data();
-                const stockRef = dataDoc.stock;
+                const stockDb = dataDoc.stock;
                 const productAddedToCart = cart.find(prod => prod.id === doc.id);
                 const prodQuantity = productAddedToCart?.quantity;
                 
-                if(stockRef >= prodQuantity) {
-                    batch.update(doc.ref, { stock: stockRef - prodQuantity});
+                if(stockDb >= prodQuantity) {
+                    batch.update(doc.ref, { stock: stockDb - prodQuantity});
                 }
                 else {
                     outOfStock.push({id: doc.id, ...dataDoc})
