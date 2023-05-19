@@ -15,17 +15,15 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features" className='buttonNav'>Historia</Nav.Link>
-            <Nav.Link href="#pricing" className='buttonNav'>Nosotros</Nav.Link>
             <NavDropdown title="Categorias" id="collasible-nav-dropdown" className='buttonNav'>
               <NavDropdown.Item>
-                <NavLink to={`/category/vinos`} className="Option1" activeClassName="ActiveOption">Vinos</NavLink>
+                <NavLink as={Link} to={`/category/vinos`} className="Option1" activeclassname="ActiveOption">Vinos</NavLink>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <NavLink to={`/category/Tabaco`} className="Option1" activeClassName="ActiveOption">Tabaco</NavLink>
+                <NavLink as={Link} to={`/category/Tabaco`} className="Option1" activeclassname="ActiveOption">Tabaco</NavLink>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <NavLink to={`/category/Regionales`} className="Option1" activeClassName="ActiveOption">Regionales</NavLink>
+                <NavLink as={Link} to={`/category/Regionales`} className="Option1" activeclassname="ActiveOption">Regionales</NavLink>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
