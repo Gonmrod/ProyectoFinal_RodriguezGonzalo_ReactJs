@@ -22,9 +22,7 @@ export const CartProvider = ({ children }) => {
   const addItem = (item, quantity) => {
     if (!isInCart(item.id)) {
       setCart((prev) => [...prev, { ...item, quantity }]);
-    } else {
-      console.error("El producto ya fue cargado");
-    }
+    } 
   };
 
   const removeItem = (itemId) => {

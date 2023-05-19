@@ -30,7 +30,6 @@ const getImageUrl = async (itemId) => {
       const itemData = docSnap.data();
       return itemData.img;
     } else {
-      console.error(`No se encontró el item con ID: ${itemId}`);
       return null;
     }
   } catch (error) {
