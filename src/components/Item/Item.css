@@ -40,6 +40,7 @@
   .ItemFooter {
     display: flex;
     justify-content: flex-end;
+    text-decoration: none;
   }
   
   .Option {
@@ -57,5 +58,6 @@
   .Option:hover {
     background-color: #a29f45;
     color: black;
+    text-decoration: none !important;
   }
   

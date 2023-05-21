@@ -1,5 +1,5 @@
 .checkoutForm {
-    width: 500px;
+    max-width: 500px;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     box-shadow: 0 3px 35px rgb(0 0 0 / 0.2);
 }
 .checkoutOrder {
-    width: 600px;
+    max-width: 600px;
     margin: 150px auto;
     display: flex;
     flex-direction: column;
@@ -35,6 +35,15 @@ h1 {
     font-size: 46px;
     letter-spacing: 1.5px;
     margin: 50px;
+}
+@media (max-width: 576px) {
+ h1{
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin: 50px;
+ }   
 }
 h2 {
     text-align: center;

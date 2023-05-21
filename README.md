@@ -51,6 +51,6 @@ o
 Contribuciones y Contacto 🤝
 ¡Las contribuciones a este proyecto son más que bienvenidas! Si tienes alguna sugerencia, mejora o problema que reportar, no dudes en abrir un issue o enviar un pull request en este repositorio.
 
-Si deseas contactarme directamente, puedes encontrarme en [LinkedIn.](https://www.linkedin.com/in/gonzalo-rodriguez-351890197/)
+Si deseas contactarme directamente, puedes encontrarme en [LinkedIn.](https://www.linkedin.com/in/gonzalo-m-rodriguez/)
 
 ¡Gracias por visitar mi proyecto! Espero que te diviertas explorando la tienda retro. 🔥✨
