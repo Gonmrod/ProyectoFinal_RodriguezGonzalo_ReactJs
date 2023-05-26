@@ -6,7 +6,7 @@
 Este proyecto es una aplicación web diseñada para crear una tienda en línea de productos tradicionales. Permite a los usuarios explorar y comprar una variedad de productos de selección, como vinos, tabaco y artículos regionales. La aplicación ofrece una interfaz intuitiva y atractiva, brindando una experiencia de compra única a los usuarios.
 
 #### **Tecnologías y Herramientas utilizadas** 🚀
-:heavy_check_mark:***ReactJs*** ![](https://img.shields.io/badge/version-18.2.0-<green>): El proyecto está desarrollado utilizando el framework de JavaScript ReactJs, lo que permite crear una interfaz de usuario interactiva y dinámica.
+:heavy_check_mark:***ReactJs*** ![](https://img.shields.io/badge/version-18.2.0-<green>): El proyecto está desarrollado utilizando el framework de JavaScript ReactJs, lo que permite crear una interfaz de usuario interactiva y dinámica. Se ha utilizado el comando create-react-app.
 
 :heavy_check_mark:***Bootstrap*** ![](https://img.shields.io/badge/version-5.2.3-<green>): Se utiliza la biblioteca de estilos Bootstrap para lograr un diseño moderno y responsivo de la aplicación.
 
